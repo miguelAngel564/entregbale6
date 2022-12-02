@@ -68,7 +68,7 @@ const Product = () => {
                     <p>{productsFounf?.description}</p>
                     <input value={rate} type="number" class="form-control" onChange={(e) => setRate(e.target.value)} />
                     <br /><br />
-                    <Button onClick={addToFavorites}>Add TO CARS</Button>
+                    <Button onClick={addToFavorites}>Add to Cars</Button>
                 </Col>
                     </Row>
             <br />
