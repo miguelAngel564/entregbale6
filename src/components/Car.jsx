@@ -15,17 +15,23 @@ const Car = ({ show, handleClose }) => {
         <>
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>SHOPPING CART </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     {
                         cart.map(product => (
-                            <div>{product.title}
-                            <button onClick={() => dispatch(deleteProductsThunk(product.id))}>delete</button>
+                            <div>
+                                <h1>Product: </h1>
+                                {product.title}
+                                <br />
+                                <button style={{ margin: "20px 0", color: "red" }}
+                                    className='btn btn-secondary'
+                                    onClick={() => dispatch(deleteProductsThunk(product.id))}>
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
                             </div>
                         ))
                     }
-
                     <Button onClick={() => dispatch(checkoutThank())}>Checkout</Button>
                 </Offcanvas.Body>
             </Offcanvas>
