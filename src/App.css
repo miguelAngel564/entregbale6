@@ -7,9 +7,13 @@
  }
  .ma{
   color: aqua;
+  object-fit: contain
+
  }
  img{
   overflow: hidden;
+  object-fit: contain
+
  }
  .ma{
   transition: 0.5s;
@@ -21,6 +25,8 @@
  .img-2{
   transition: 0.5s;
   object-fit: cover;
+  object-fit: contain
+
  }
  .img-2:hover{
   transform: scale(0.8);

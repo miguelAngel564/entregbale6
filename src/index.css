@@ -1,0 +1,12 @@
+.addProduct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+b{
+    color: red;
+}
+li{
+    list-style: none;
+}
